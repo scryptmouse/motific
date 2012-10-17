@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <title>motific.word-list - motific API documentation</title>
+    <link href="static/favicon.png" rel="icon" />
+    <link href="static/favicon.png" rel="shortcut icon" />
+    <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/wiki.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/internal.css" rel="stylesheet" />
+    <style>.menuWrapper{height: 36px;}</style>
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="http://www.wikispaces.com/_/2009051601/s/internal_ie.css" type="text/css" />
+    <![endif]-->
+  </head>
+<!--
+This document was auto-generated from the source by the clojure autodoc system.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+-->
+  <body>
+    <div id="AllContentContainer">
+      <div id="Header">
+	<a id="Logo" href="index.html"><img alt="Clojure" height="100" width="100" src="static/clojure-icon.gif" /></a>
+	<h1><a title="page header title" id="page-header" href="index.html">motific</a></h1>
+      </div>
+      <div id="leftcolumn"><div style="text-align: center;"></div>
+<div class="menu">
+  <div class="WikiCustomNav WikiElement wiki">
+    <span class="toc-header"><span id="project-name">motific</span> <span id="version"></span> API</span><br />
+    <ul>
+      <li><a class="wiki_link" href="index.html">Overview</a></li>
+      <li><a class="wiki_link" href="api-index.html">API Index</a></li>
+    </ul>
+    <div class="NamespaceTOC">
+      <span class="toc-header">Namespaces</span>
+      <ul id="left-sidebar-list">
+        <li><a href="motific.anagram-api.html" class="wiki_link">motific.anagram</a></li><li><a href="motific.core-api.html" class="wiki_link">motific.core</a></li><li><a href="motific.output-api.html" class="wiki_link">motific.output</a></li><li><a href="motific.util-api.html" class="wiki_link">motific.util</a></li><li><a href="motific.word-list-api.html" class="wiki_link">motific.word-list</a></li>
+      </ul>
+    </div>
+    
+    <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
+  </div>
+</div>
+</div>
+      <div id="rightcolumn">
+	<div id="Content">
+	  <div class="contentBox"><div class="innerContentBox">
+              <div id="content_view" class="wiki wikiPage">
+                <div id="right-sidebar"><div id="toc">
+  <h1 class="nopad">Table of Contents</h1>
+  <div style="margin-left: 1em;" class="toc-section">
+    <a href="#toc0">Overview</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.word-list/filter-valid">filter-valid</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.word-list/find-installed">find-installed</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.word-list/generate">generate</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.word-list/random">random</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.word-list/valid-word-length?">valid-word-length?</a>
+    </div>
+    <br />
+  </div>
+</div>
+</div>
+                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">motific.word-list</span>
+  - <span id="header-project">motific</span> <span id="header-version"></span>
+  </h1>
+
+<br />Full namespace name: <span id="long-name">motific.word-list</span>
+<p></p>
+<h2>Overview</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+<h2>Public Variables and Functions</h2>
+<div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.word-list/filter-valid">filter-valid</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (filter-valid wordlist)
+</pre>
+  <pre id="var-docstr">Take a sequence of words and lowercases, sorts,
+removes duplicates, and filters the sequence
+based on word length and whether the word is
+only #"[a-z]".</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.word-list/find-installed">find-installed</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (find-installed)
+</pre>
+  <pre id="var-docstr">Searches standard unix paths for installed words file.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.word-list/generate">generate</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (generate)
+       (generate file)
+       (generate file params)
+</pre>
+  <pre id="var-docstr">Generate a word-list collection from 'file'</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.word-list/random">random</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (random words &amp; {:keys [min-length max-length exact-length quantity], :or default-params, :as args})
+</pre>
+  <pre id="var-docstr">Returns a randomized sequence of words from a collection with optional parameters:
+[min-length max-length exact-length quantity]
+Pass 'nil' to the quantity parameter to get the lazy sequence instead of a set quantity.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.word-list/valid-word-length?">valid-word-length?</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (valid-word-length? &amp; {:keys [min-length max-length exact-length quantity], :or default-params})
+</pre>
+  <pre id="var-docstr">Returns a comparator function that checks the length of a word based on specific parameters</pre>
+  
+  
+  
+</div>
+
+
+</div>
+              </div>
+            </div>
+          </div>
+	</div>
+	<div id="foot">
+	  <div style="text-align: center;" id="copyright">©2012 Alexandra Grey</div>
+	</div>
+      </div>
+      <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />
+      Clojure auto-documentation system by Tom Faulhaber.</div>
+    </div>
+    <!-- /AllContentContainer -->
+  </body>
+
+</html>

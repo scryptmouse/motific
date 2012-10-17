@@ -1,0 +1,197 @@
+<html>
+  <head>
+    <title>motific.anagram - motific API documentation</title>
+    <link href="static/favicon.png" rel="icon" />
+    <link href="static/favicon.png" rel="shortcut icon" />
+    <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/wiki.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/internal.css" rel="stylesheet" />
+    <style>.menuWrapper{height: 36px;}</style>
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="http://www.wikispaces.com/_/2009051601/s/internal_ie.css" type="text/css" />
+    <![endif]-->
+  </head>
+<!--
+This document was auto-generated from the source by the clojure autodoc system.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+-->
+  <body>
+    <div id="AllContentContainer">
+      <div id="Header">
+	<a id="Logo" href="index.html"><img alt="Clojure" height="100" width="100" src="static/clojure-icon.gif" /></a>
+	<h1><a title="page header title" id="page-header" href="index.html">motific</a></h1>
+      </div>
+      <div id="leftcolumn"><div style="text-align: center;"></div>
+<div class="menu">
+  <div class="WikiCustomNav WikiElement wiki">
+    <span class="toc-header"><span id="project-name">motific</span> <span id="version"></span> API</span><br />
+    <ul>
+      <li><a class="wiki_link" href="index.html">Overview</a></li>
+      <li><a class="wiki_link" href="api-index.html">API Index</a></li>
+    </ul>
+    <div class="NamespaceTOC">
+      <span class="toc-header">Namespaces</span>
+      <ul id="left-sidebar-list">
+        <li><a href="motific.anagram-api.html" class="wiki_link">motific.anagram</a></li><li><a href="motific.core-api.html" class="wiki_link">motific.core</a></li><li><a href="motific.output-api.html" class="wiki_link">motific.output</a></li><li><a href="motific.util-api.html" class="wiki_link">motific.util</a></li><li><a href="motific.word-list-api.html" class="wiki_link">motific.word-list</a></li>
+      </ul>
+    </div>
+    
+    <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
+  </div>
+</div>
+</div>
+      <div id="rightcolumn">
+	<div id="Content">
+	  <div class="contentBox"><div class="innerContentBox">
+              <div id="content_view" class="wiki wikiPage">
+                <div id="right-sidebar"><div id="toc">
+  <h1 class="nopad">Table of Contents</h1>
+  <div style="margin-left: 1em;" class="toc-section">
+    <a href="#toc0">Overview</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.anagram/add-letter-to-each-word">add-letter-to-each-word</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.anagram/add-letter-to-word">add-letter-to-word</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.anagram/find-in-list">find-in-list</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.anagram/get-valid">get-valid</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.anagram/get-valid-in-list">get-valid-in-list</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.anagram/has-anagrams?">has-anagrams?</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.anagram/insert-letter">insert-letter</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#motific.anagram/permutate">permutate</a>
+    </div>
+    <br />
+  </div>
+</div>
+</div>
+                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">motific.anagram</span>
+  - <span id="header-project">motific</span> <span id="header-version"></span>
+  </h1>
+
+<br />Full namespace name: <span id="long-name">motific.anagram</span>
+<p></p>
+<h2>Overview</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+<h2>Public Variables and Functions</h2>
+<div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.anagram/add-letter-to-each-word">add-letter-to-each-word</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (add-letter-to-each-word letter words)
+</pre>
+  <pre id="var-docstr">Step 1 permutation, accepts a collection of words as vectors and adds a letter to each</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.anagram/add-letter-to-word">add-letter-to-word</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (add-letter-to-word letter word)
+</pre>
+  <pre id="var-docstr">Step 2 permutation, accepts a word-vector and adds a letter at every position</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.anagram/find-in-list">find-in-list</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (find-in-list words w)
+</pre>
+  <pre id="var-docstr">Given list 'words', checks to see possible anagrams for word 'w'</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.anagram/get-valid">get-valid</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (get-valid w)
+</pre>
+  <pre id="var-docstr">Just a wrapper around permutate to sort / distinct</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.anagram/get-valid-in-list">get-valid-in-list</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (get-valid-in-list w words)
+</pre>
+  <pre id="var-docstr">Supply a word to generate anagrams for followed by a list of valid words</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.anagram/has-anagrams?">has-anagrams?</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (has-anagrams? first-word)
+       (has-anagrams? first-word &amp; other-words)
+</pre>
+  <pre id="var-docstr">If passed one word, returns an anonymous function for use as
+a comparator, else compares the words and returns a boolean</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.anagram/insert-letter">insert-letter</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (insert-letter letter word pos)
+</pre>
+  <pre id="var-docstr">Step 3 permutation: inserts a letter into word-vector given position 'pos'.</pre>
+  
+  
+  
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="motific.anagram/permutate">permutate</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (permutate w &amp; {:keys [fixed-length], :or {fixed-length false}})
+</pre>
+  <pre id="var-docstr">Generates all possible permutations of a word.
+Specify :fixed-length true to only return permutations
+that are the same length.</pre>
+  
+  
+  
+</div>
+
+
+</div>
+              </div>
+            </div>
+          </div>
+	</div>
+	<div id="foot">
+	  <div style="text-align: center;" id="copyright">©2012 Alexandra Grey</div>
+	</div>
+      </div>
+      <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />
+      Clojure auto-documentation system by Tom Faulhaber.</div>
+    </div>
+    <!-- /AllContentContainer -->
+  </body>
+
+</html>
