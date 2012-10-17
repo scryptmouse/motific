@@ -1,5 +1,5 @@
 (ns motific.output
-  (:require [clojure.data.json :as json]
+  (:require [cheshire.core :as json]
             [clojure.data.xml :as xml]
             [clj-yaml.core :as yaml]
             [clojure.string :as string]))
@@ -22,7 +22,7 @@
 
 (defmethod writer
   'json [settings data]
-  (json/write-str
+  (json/generate-string
     (case (:action settings)
       "random" data
       (into {} data))))
